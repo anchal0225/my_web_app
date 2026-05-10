@@ -1,18 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cloud App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vercel App</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 350px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #4facfe;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #008cdd;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>My Cloud App</h1>
-    <p>Deployed using Vercel (PaaS)</p>
+    <div class="container">
+        <h1>Hello from Vercel 🚀</h1>
+        <p>Web application deployed successfully.</p>
 
-    <h3>Features:</h3>
-    <ul>
-        <li>Simple HTML page</li>
-        <li>Cloud deployment</li>
-    </ul>
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Welcome to my deployed web application!");
+        }
+    </script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
